@@ -1,0 +1,129 @@
+@media screen and (min-width:0px) and (max-width:480px) {
+    /* ----------------HEADER---------------- */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list-item {
+        padding: 10px 0;
+    }
+
+    /* ---------------MAIN--------------- */
+    main {
+        padding: 0;
+    }
+
+    /* -------------------PAGINA INICIO---------------------------- */
+    .titulo-container h1 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .titulo-container p {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .btn-juega {
+        align-self: center;
+    }
+
+    .portada-container {
+        flex-direction: column;
+    }
+
+    .descripcion-container {
+        width: 100%;
+    }
+
+    .img-portada-container {
+        width: 100%;
+    }
+
+    .seccion-mas-jugados p {
+        text-align: center;
+    }
+
+    /* ---------------FOOTER--------------- */
+    .footer-links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .derechos-container p {
+        text-align: center;
+    }
+
+    /* ------------------SECCION JUEGOS------------------ */
+    .titulo-juegos {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* -------------SECCION SOBRE NOSOTROS------------- */
+    .seccion-introduccion h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .seccion-introduccion p {
+       text-align: center;
+    }
+
+    .seccion-oficina div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-oficina div img {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .equipo-container {
+        width: 100%;
+    }
+
+    .equipo-container img {
+        width: 80%;
+    }
+
+    .staff-container {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .staff-item {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+    }
+
+    /* ------------SECCION CONTACTO------------ */
+    .contacto-container {
+        border: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datos ul {
+        align-items: center;
+    }
+
+    .datos ul li {
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+    
+}
