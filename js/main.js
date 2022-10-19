@@ -1,3 +1,5 @@
+/* --------------CARGAR JUEGOS DE LA API-------------- */
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -33,3 +35,48 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/games', options)
     })
 	.catch(err => console.error(err));
     
+
+/* -----------------VALIDAR FORMULARIO----------------- */
+
+const nombre = document.getElementById("nombre");
+const mail = document.getElementById("mail");
+const telefono = document.getElementById("telefono");
+const mensaje = document.getElementById("mensaje");
+const form = document.getElementById("form");
+const parrafo = document.getElementById("warning");
+
+form.addEventListener("submit" , e=> {
+    e.preventDefault();
+    let warnings = "";
+    let entrar = false
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3,4})+$/;
+    parrafo.innerHTML = ``;
+    if (nombre.value.length < 4) {
+        warnings += `El nombre no es valido <br>`;
+        entrar = true;
+    }
+
+    if (!regexEmail.test(mail.value)) {
+        warnings += `El email no es valido <br>`;
+        entrar = true;
+    }
+
+    if(telefono.value.length < 10) {
+        warnings += `El telefono no es valido <br>`;
+        entrar = true;
+    }
+
+    if(mensaje.value.length < 5) {
+        warnings += `El mensaje es muy corto <br>`;
+        entrar = true;
+    }
+
+    if (entrar) {
+        parrafo.innerHTML = warnings;
+    }
+    else {
+        parrafo.innerHTML = "Enviado";
+    }
+})
+
+

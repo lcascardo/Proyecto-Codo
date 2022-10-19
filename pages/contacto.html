@@ -37,17 +37,18 @@
         <div class="contacto-container">
             <div class="formulario">
                 <h1>Contactenos</h1>
-                <form>
+                <form id="form">
                     <label for="nombre"></label>
                     <input type="text" placeholder="Nombre" id="nombre">
                     <label for="mail"></label>
-                    <input type="email" placeholder="mail" id="mail">
+                    <input type="email" placeholder="mail Ej: nombre@gmail.com" id="mail">
                     <label for="tel"></label>
-                    <input type="tel" placeholder="Telefono">
+                    <input type="tel" placeholder="Telefono  Ej: 1155246574" id="telefono">
                     <label for="mensaje"></label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <input class="btn-form" type="submit">
                     <input class="btn-form" type="reset">
+                    <p class="warning" id="warning"></p>
                 </form>
             </div>
             <div class="datos">
@@ -113,7 +114,7 @@
 
 
 
-
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
